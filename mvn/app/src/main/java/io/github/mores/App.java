@@ -61,7 +61,7 @@ public class App {
 
         java.io.File newFile = new java.io.File(file.getParent(), newName);
         java.io.PrintWriter pw = new java.io.PrintWriter(newFile);
-        pw.println("module " + module + "(scale) {polyhedron(");
+        pw.println("module " + module + "(scale) { translate([0,0,0]) rotate([0,0,0]) polyhedron(");
         pw.println(stlConverter.getScad());
         pw.println(");}");
         pw.close();
