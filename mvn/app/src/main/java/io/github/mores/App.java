@@ -65,6 +65,8 @@ public class App {
         pw.println(stlConverter.getScad());
         pw.println(");}");
         pw.close();
+
+        log.info("Your new SCAD file is here: " + newFile);
     }
 
     public static void usage() {
